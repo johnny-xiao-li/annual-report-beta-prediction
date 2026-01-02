@@ -26,11 +26,10 @@ The paper predicts **CAPM Beta (β)** from **Form 10‑K Item 1A (Risk Factors)*
 │  ├─ portfolio/                # portfolio simulation
 │  └─ utils/
 ├─ scripts/                     # runnable scripts
-├─ configs/                     # YAML configs
-├─ paper/                       # paper PDF (optional)
-├─ data/raw/                    # ignored by git
-├─ data/processed/              # ignored by git
-└─ results/                     # ignored by git
+├─ slides/
+│  └─ oral_presentation.pdf     
+└─ configs/                     # YAML configs
+
 ```
 
 ## Quickstart
@@ -66,6 +65,13 @@ python scripts/eval.py  --config configs/default.yaml
 ```bash
 python scripts/portfolio.py --config configs/default.yaml
 ```
+
+## Paper & Oral presentation
+
+- 📄 Paper (AICS 2024, CEUR-WS): https://ceur-ws.org/Vol-3910/aics2024_p31.pdf
+- 🎤 Oral presentation:
+  - Slides (PDF): [slides/oral_presentation.pdf](slides/oral_presentation.pdf)
+
 
 ## Citation
 
