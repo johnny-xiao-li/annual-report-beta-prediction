@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+type: software
+title: "annual-report-beta-prediction"
+authors:
+  - family-names: "Li"
+    given-names: "Xiao"
+  - family-names: "Xu"
+    given-names: "Yang"
+  - family-names: "Yang"
+    given-names: "Linyi"
+  - family-names: "Zhang"
+    given-names: "Yue"
+  - family-names: "Dong"
+    given-names: "Ruihai"
+license: MIT
+repository-code: "https://github.com/<YOUR_GITHUB_USERNAME>/annual-report-beta-prediction"
+preferred-citation:
+  type: article
+  title: "NLP-Based Analysis of Annual Reports: Asset Volatility Prediction and Portfolio Strategy Application"
+  authors:
+    - family-names: "Li"
+      given-names: "Xiao"
+    - family-names: "Xu"
+      given-names: "Yang"
+    - family-names: "Yang"
+      given-names: "Linyi"
+    - family-names: "Zhang"
+      given-names: "Yue"
+    - family-names: "Dong"
+      given-names: "Ruihai"
+  year: 2024
+  conference:
+    name: "32nd Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2024)"
