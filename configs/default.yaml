@@ -1,0 +1,32 @@
+seed: 42
+
+data:
+  # Put your EDGAR-CORPUS / extracted Item 1A text here after preprocessing
+  processed_dir: "data/processed"
+  item_text_file: "data/processed/item1a_text.parquet"   # columns: cik, ticker, filing_date, text
+  beta_label_file: "data/processed/beta_labels.parquet"  # columns: cik/ticker, asof_date, horizon_days, beta
+
+model:
+  name: "hier_bert"
+  base_encoder: "bert-base-uncased"
+  max_sentences: 256
+  max_tokens_per_sentence: 128
+  sentence_encoder_pool: "cls"   # cls | mean
+  doc_transformer_layers: 2
+  doc_transformer_heads: 8
+  dropout: 0.1
+
+train:
+  device: "cuda"
+  batch_size: 4
+  lr: 2.0e-5
+  epochs: 3
+  horizon_days: 180
+  train_years: [2010, 2018]
+  test_years: [2019, 2020]
+
+portfolio:
+  top_k: 10
+  bottom_k: 10
+  holding_days: 180
+  benchmark: "^GSPC"
